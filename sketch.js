@@ -14,6 +14,7 @@ function SphoneNo(num){
         m.forEach((match, groupIndex) => {
             console.log(`Found match, group ${groupIndex}: ${match}`);
             c = true;
+            document.getElementById('Sno').style.backgroundColor = "white";
         });
     }
     if(c === false){
@@ -38,6 +39,7 @@ function PphoneNo(num){
         m.forEach((match, groupIndex) => {
             console.log(`Found match, group ${groupIndex}: ${match}`);
             c = true;
+            document.getElementById('Pno').style.backgroundColor = "white";
         });
     }
     if(c === false){
@@ -63,6 +65,7 @@ function Email(mail){
         m.forEach((match, groupIndex) => {
             console.log(`Found match, group ${groupIndex}: ${match}`);
             c = true;
+            document.getElementById('mail').style.backgroundColor = "white";
         });
     }
     if (c === false){
@@ -72,7 +75,7 @@ function Email(mail){
 }
 
 function DOB(dob) {
-    const regex = /[0-9]{2}[\-]([0][1-9]|[1][0-2])[\-]([1][9][9][0-9]|[2][0][0][0-5])$/gm;
+    const regex = /([0-2][0-9]|[3][0-1])[\-]([0][1-9]|[1][0-2])[\-]([1][9][9][0-9]|[2][0][0][0-5])$/gm; //changes need to be done
     const str = document.getElementById('dob').value;
     let m;
     let c = false;
@@ -87,6 +90,7 @@ function DOB(dob) {
         m.forEach((match, groupIndex) => {
             console.log(`Found match, group ${groupIndex}: ${match}`);
             c = true;
+            document.getElementById('dob').style.backgroundColor = "white";
         });
     }
     if (c === false){
@@ -111,6 +115,7 @@ function PRN(prn){
         m.forEach((match, groupIndex) => {
             console.log(`Found match, group ${groupIndex}: ${match}`);
             c = true;
+            document.getElementById('prn').style.backgroundColor = "white";
         });
     }
     if (c === false){
@@ -137,6 +142,7 @@ function Semester(sem){
             m.forEach((match, groupIndex) => {
                 console.log(`Found match, group ${groupIndex}: ${match}`);
                 c = true;
+                document.getElementById('semester').style.backgroundColor = "white";
             });
         }
         if (c === false){
@@ -165,6 +171,7 @@ function add(address){
         m.forEach((match, groupIndex) => {
             console.log(`Found match, group ${groupIndex}: ${match}`);
             c = true;
+            document.getElementById('address').style.backgroundColor = "white";
         });
     }
     if (c === false){
@@ -189,6 +196,7 @@ function Name(name){
         m.forEach((match, groupIndex) => {
             console.log(`Found match, group ${groupIndex}: ${match}`);
             c = true;
+            document.getElementById('name').style.backgroundColor = "white";
         });
     }
     if (c === false){
